@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1542164821 "CV_Jiachuan_Xu.xdv" "CV_Jiachuan_Xu.pdf" "CV_Jiachuan_Xu" 1542164824
-  "CV_Jiachuan_Xu.xdv" 1542164821 33892 c37829fa39e7503e6f20b1c8d2e9aaf1 "xelatex"
+["xdvipdfmx"] 1546736279 "CV_Jiachuan_Xu.xdv" "CV_Jiachuan_Xu.pdf" "CV_Jiachuan_Xu" 1546736281
+  "CV_Jiachuan_Xu.xdv" 1546736279 52096 54b8d68bc27a99bf25cf228567ec3ad5 "xelatex"
   (generated)
   "CV_Jiachuan_Xu.pdf"
-["xelatex"] 1542164820 "CV_Jiachuan_Xu.tex" "CV_Jiachuan_Xu.xdv" "CV_Jiachuan_Xu" 1542164824
+["xelatex"] 1546736278 "CV_Jiachuan_Xu.tex" "CV_Jiachuan_Xu.xdv" "CV_Jiachuan_Xu" 1546736281
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1480098689 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1480098698 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -75,13 +75,13 @@
   "/usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf" 1522066949 33362 cf75436e19743e94a92a6b1b9183c434 ""
   "/usr/local/texlive/2018/texmf-var/web2c/xetex/xelatex.fmt" 1523934532 3731946 97a69080a287fbc922a3cd699c6fd124 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "CV_Jiachuan_Xu.aux" 1542164821 650 05d5d73d71b1b643b043ac934c7833e8 ""
-  "CV_Jiachuan_Xu.out" 1542164821 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "CV_Jiachuan_Xu.tex" 1542164820 6963 4f3bc82cd70f18c36866f17adbaba6dd ""
-  "resume.sty" 1528511793 6341 11deca31fe4ab9fb056ccc1539aa640d ""
-  "thu-whole-logo.png" 1486781554 334529 2d6192265f815ae33d00697177a5f3b7 ""
+  "CV_Jiachuan_Xu.aux" 1546736279 650 05d5d73d71b1b643b043ac934c7833e8 ""
+  "CV_Jiachuan_Xu.out" 1546736279 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "CV_Jiachuan_Xu.tex" 1546764610 10130 002969f3411023d3bf4493bcce15d609 ""
+  "resume.sty" 1546764610 6341 11deca31fe4ab9fb056ccc1539aa640d ""
+  "thu-whole-logo.png" 1546764610 334529 2d6192265f815ae33d00697177a5f3b7 ""
   (generated)
-  "CV_Jiachuan_Xu.xdv"
   "CV_Jiachuan_Xu.aux"
-  "CV_Jiachuan_Xu.out"
+  "CV_Jiachuan_Xu.xdv"
   "CV_Jiachuan_Xu.log"
+  "CV_Jiachuan_Xu.out"
