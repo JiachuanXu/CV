@@ -1,0 +1,324 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+\usepackage{sectsty}
+%\sectionfont{\rmfamily\mdseries\Large}
+%\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+%\usepackage[T1]{fontenc}
+%\usepackage[urw-garamond]{mathdesign}
+
+\usepackage{graphicx}
+\usepackage{bm}
+
+
+%%%%%%%%%%%%%%%%%%{}%%%%%%%%%%%%%%%%%%%
+%for small dot before item in itemize
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+\maintitle{}{}{Last update on \today}
+
+\begin{minipage}[t]{0.495\textwidth}
+{\huge Jiachuan Xu}
+\end{minipage}
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+\begin{minipage}[t]{0.495\textwidth}
+    \includegraphics[totalheight=0.8in]{thu-whole-logo.png}
+\end{minipage}
+\bigskip
+
+\begin{minipage}[t]{0.495\textwidth}
+  Department of Physics \\
+  Tsinghua University \\
+  Haidian District\\
+  Beijing, P.R.China
+  %to be added
+\end{minipage}
+\begin{minipage}[t]{0.495\textwidth}
+  Phone: (+86) 131-4134-5463 \\
+  \phantom{Phone: }(+1) 626-550-6765\\
+  Email: \href{mailto:xjc14@tsinghua.org.cn}{xjc14@tsinghua.org.cn}\\
+  \phantom{Email:} \href{mailto:jiachuanxu14@gmail.com}{jiachuanxu14@gmail.com}\\
+  Github: \href{https://github.com/JiachuanXu}{https://github.com/JiachuanXu}
+\end{minipage}
+
+% title on top of the document
+
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+
+
+\roottitle{EDUCATION}
+
+\spacedhrule{0.4em}{0.8em}  % a horizontal line with some vertical spacing before and after
+
+\headedsection
+  {Tsinghua University}
+  {\textsc{Beijing, China}}
+  {
+    \headedsubsection
+    {B.S. in Physics}
+    {2014.8 -- 2018.7}
+    {}
+
+    \headedsubsection
+    {\textnormal{Cumulative GPA:} 87.49/100}
+    %\textnormal{, Ranking: }13/52 \textnormal{in the Department of Physics}}
+    {}
+    {}
+  }
+
+
+\roottitle{RESEARCH EXPERIENCE}
+
+\spacedhrule{0.4em}{0.8em}
+
+\headedsection
+  {Tsinghua University\\
+  Department of Physics, \href{http://astro.tsinghua.edu.cn/}{Tsinghua Center for Astrophysics}}
+  {\textsc{Beijing, China}} 
+  {
+
+    \headedsubsection
+    {\textnormal{Research Assistant, Advisor:} Professor Yi Mao}
+    {2016.6 -- Present}
+    {
+      \bodytext{
+      \textbf{Project: Redshift Space Distortion (RSD) of the 21-cm Background From The Epoch of Reionization}
+      \begin{itemize}
+        \item Developed a method, $\tau$-MMRRM, to correct for the RSD in the 21-cm brightness temperature in numerical simulations.
+        \item Developed a C program to generate distorted 21-cm brightness temperature in redshift space, and a toolbox to analyze the statistics of observables, e.g. power spectrum, probability distribution function(PDF), etc. The code is available on my github repository (\href{https://github.com/JiachuanXu/MMRRM_adv.git}{https://github.com/JiachuanXu/MMRRM\_adv.git}) %\footnote{Currently this repository is a private one. I'll change the status into public once I submit the application, but with a preliminary version of code.}
+        \item Proposed the ``extended quasi-linear scheme" to interpret the 21-cm power spectrum in redshift space; quantified to what extent we can recover the matter power spectrum from 21-cm power spectrum. 
+      \end{itemize}
+      }
+    }
+  }
+
+\headedsection
+  {University of Arizona\\
+  Department of Astronomy}
+  {\textsc{Tucson, AZ, U.S.A}}
+  {
+    \headedsubsection
+    {\textnormal{Research Assistant, Advisor:} Professor Xiaohui Fan, Professor Zheng Cai}
+    {2018.1 -- Present}
+    {
+      \bodytext{
+      \textbf{Project: Studying the Overdensity of Lyman Break Galaxies in Proto-cluster BOSS1441}
+      \begin{itemize}
+        \item Reduced optical and infrared images within BOSS1441 field, which contains one of the most massive proto-clusters at z=2.32.
+        \item Combining photometry in UViJHK bands to deduce photometric redshift, quantifying the overdensity of Lyman Break Galaxies in BOSS1441.
+        \item Reduced Binospec multislit spectra within BOSS1441 field.
+      \end{itemize}
+      }
+    }
+  }
+
+\roottitle{Publications in Preparation (First Author)}
+\spacedhrule{0.4em}{0.8em}
+\begin{itemize}
+    \item \textbf{Jiachuan Xu}, Yi Mao, "Redshift Space Distortion of the 21-cm Background from the Epoch of Reionization \RNum{2}: Effect of Finite Optical Thickness", in preparation. Expected submission to MNRAS at March, 2019%\footnote{Will put the link of the draft at here once it's finished.}
+    \item \textbf{Jiachuan Xu}, Yi Mao, "Redshift Space Distortion of the 21-cm Background from the Epoch of Reionization \RNum{3}: Understanding RSD Through Extended Quasi-linear Scheme", in preparation. Expected submission to MNRAS at March, 2019%\footnote{Will put the link of the draft at here once it's finished.}
+\end{itemize}
+
+\roottitle{Publications (Co-author)}
+\spacedhrule{0.4em}{0.8em}
+\begin{itemize}
+    \item Kai Hoffmann, Yi Mao, \textbf{Jiachuan Xu}, Houjun Mo, Benjamin D. Wandelt, "Signatures of Cosmic Reionization on the 21cm 2- and 3-point Correlation Function I: Quadratic Bias Modeling", 2018, \href{https://arxiv.org/abs/1802.02578}{arXiv:1802.02578}, submitted to MNRAS.
+    \item F. Arrigoni Battaia, Chian-Chou Chen, M. Fumagalli, Zheng Cai, G. Calistro Rivera, \textbf{Jiachuan Xu}, I. Smail, J. X. Prochaska, Yujin Yang, C. De Breuck, "Overdensity of submillimeter galaxies around the z$\sim$2.3 MAMMOTH-1 nebula", 2018,  \href{https://arxiv.org/abs/1810.10140}{arXiv:1810.10140}, submitted to Astronomy \& Astrophysics.
+\end{itemize}
+
+\roottitle{Conference and Meeting}
+
+\spacedhrule{0.4em}{0.8em}
+
+\headedsection
+    {American Astronomy Society}
+    {\textsc{Seattle, United States}}
+    {
+        \headedsubsection
+        {223rd AAS Winter Meeting}
+        {2019.1(Expected)}
+        {
+          \bodytext{
+            \begin{itemize}
+            \item Give poster on "Redshift Space Distortion of the 21-cm Background from the Epoch of Reionization"
+            \end{itemize}
+          }
+        }
+    }
+
+\headedsection
+  {School On Cosmology, Fudan University}
+  {\textsc{Shanghai, China}}
+  {
+    \headedsubsection
+    {2017 Spring School On Cosmology: "Early Universe: Theory and Observations"}
+    {2017.2}
+    {    
+      \bodytext{
+      \begin{itemize}
+        \item Accomplished courses on large-scale structure and early universe.
+      \end{itemize}
+      }
+    }
+  }
+
+\headedsection
+  {China Astronomical Society}
+  {}
+  {
+    \headedsubsection
+    {The $19^{th}$ CAS Guoshoujing Symposium on Galaxies and Cosmology}
+    {2016.6}
+    {
+    \bodytext{
+      \begin{itemize}
+        \item Learned the frontiers in galaxies and cosmology.
+      \end{itemize}
+      }
+    }
+
+    \headedsubsection
+    {2017 Annual Meeting}
+    {2017.8}
+    {
+    \bodytext{
+      \begin{itemize}
+        \item Learned the frontiers in cosmology, large-scale structure and galaxies formation.
+      \end{itemize}
+      }
+    }
+  }
+
+%\headedsection
+%  {21cm Cosmology and SKA Workshop and Tianlai Collaboration Meeting}
+%  {2017.8, Urumqi}
+%  {
+%  \bodytext{
+%    \begin{itemize}
+%      \item Learned the scientific goal of Tianlai Project, and instrumental issues.
+%    \end{itemize}
+%  }
+%  }
+
+\roottitle{SKILLS}
+
+\spacedhrule{0.4em}{0.8em}
+
+\headedsection
+  {Language Proficiency:}
+  {}
+  {
+  \begin{itemize}
+    \item Fluent in English
+    \item TOEFL: 103(Reading 27, Listening 28, Speaking 22, Writing 26)
+  \end{itemize}
+  }
+
+\headedsection
+  {Programming \& Data Reduction:}
+  {}
+  {
+  \begin{itemize}
+    \item Skilled: C, Python3, \LaTeX
+    \item Familiar: Mathematica, Fortran, IDL, C++
+    \item Library \& Software: \href{https://www.openmp.org/}{OpenMP}, \href{http://www.fftw.org/}{FFTW}, \href{https://www.astromatic.net/software/sextractor}{SExtractor}, \href{https://github.com/gbrammer/eazy-photoz.git}{EAZY}, \href{http://www.cfht.hawaii.edu/~arnouts/LEPHARE/lephare.html}{LePhare}...
+  \end{itemize}  
+  }
+
+\roottitle{COURSEWORK}
+
+\spacedhrule{0.4em}{0.8em}
+
+\headedsection
+  {}
+  {}  
+  {
+  \bodytext{  
+  \begin{minipage}[t]{0.495\textwidth}
+  \begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parsep}{2pt}
+  \setlength{\parskip}{2pt}
+    \item General Relativity 94
+    \item Statistical Mechanics(1) 92
+    \item Astrophysics 93
+    \item Quantum Mechanics(1) 97
+  \end{itemize}
+  \end{minipage}
+  \begin{minipage}[t]{0.495\textwidth}
+  \begin{itemize}
+  \setlength{\itemsep}{1pt}
+  \setlength{\parsep}{2pt}
+  \setlength{\parskip}{2pt}
+    \item Differential Geometry 90
+    \item Advanced Observational Astrophysics 95
+    \item Group Theory 95
+    \item Nuclear and Particle Physics 91
+  \end{itemize}
+  \end{minipage}  
+  }
+  }
+
+\roottitle{HONORS \& AWARDS}
+
+\spacedhrule{0.4em}{0.8em}
+
+\headedsection
+  {\textbf{2017}\phantom{1} Scholarship of Outstanding Social Work}
+  {}
+  {}
+
+\headedsection
+  {\textbf{2015}\phantom{1} Scholarship of Outstanding Voluntary Public Service}
+  {}
+  {}
+
+\roottitle{SOCIAL SERVICES \& Outreach}
+
+\spacedhrule{0.4em}{0.8em}
+
+\headedsection
+  {Team leader of Department of Physics Volunteer Association.}
+  {2016.9 -- 2017.9}
+  {
+    \bodytext{
+      \begin{itemize}
+        \item Initiated the voluntary activity "The Amazing Physics D.I.Y.": Volunteers in physics department guided kids to do interesting physics experiments.
+      \end{itemize}
+    }
+  }
+
+\end{document}
